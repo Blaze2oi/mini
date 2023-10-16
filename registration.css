@@ -1,0 +1,100 @@
+body {
+  font-family: 'Young Serif',sans-serif;
+  /* background-color: #ffffff; */
+  /* -webkit-text-fill-color: rgb(58, 55, 45) */
+  background-image: url("bg2.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+h1{
+  font-family: 'Young Serif', sans-serif;
+  color: aliceblue;
+}
+.container {
+  padding: 50px;
+  /* background-color: #ffffff; */
+    background-image: url("bg2.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  font-weight: bold;
+  color: aliceblue;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+textarea,
+select {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  margin-top: 5px;
+  background-color: #f1f1f1;
+  font-size: 15px;
+}
+
+input[type="radio"] {
+  margin-right: 5px;
+}
+
+button.registerbtn {
+  background-color: #007bff;
+  width: 100%;
+  color: white;
+  padding: 16px 20px;
+  margin-top: 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 15px;
+  text-emphasis-color: black
+}
+
+button.registerbtn:hover {
+  opacity: 0.9;
+}
+
+.center {
+  text-align: center;
+}
+
+/* Add this style for the phone input container */
+.phone-input {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+/* Add this style for the phone input select */
+.phone-input select {
+  flex: 1; /* Take up available space */
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  margin-top: 5px;
+  margin-right: 5px; /* Add some spacing between select and input */
+}
+
+/* Add this style for the phone input text box */
+.phone-input input[type="tel"] {
+  flex: 3; /* Take up more space */
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  margin-top: 5px;
+}
+.error-message {
+  color: red;
+  font-size: 14px;
+}
