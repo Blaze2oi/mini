@@ -16,5 +16,4 @@ else
 {
     echo "No records found";
 }
-<p><?php echo $message; ?>user_display.html</p>
 ?>
