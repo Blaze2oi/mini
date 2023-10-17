@@ -77,6 +77,12 @@
                 <!-- <button type="submit" class="btn btn-primary">Submit</button> -->
             </div>
 </form>
+<div class="form-group">
+    <label>Registered already? </label>
+    <div class="regi" ><a href="http://localhost/mini/login1.php" style="text-decoration: none; color:blue;"><b>login for Users</b></a><br></div>
+      <div class="regi" ><a href="http://localhost/mini/doclogin.php" style="text-decoration: none; color:blue;"><b>login for doctors</b></a><br></div>
+ 
+    <div>
 </body>
 
 </html>
