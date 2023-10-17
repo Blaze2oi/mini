@@ -15,7 +15,7 @@ session_start();
 
   
     <div class="container">
-       <center> <h1>User Login</h1> </center>
+       <center> <h1>Admin Login</h1> </center>
       <label for="Email"><b>Email</b></label>
       <input type="text" placeholder="Enter Email" id="Email" name="Email" required>
   
@@ -67,7 +67,7 @@ include("connect.php");
             // echo "$pwd";
         }
 
-        $sql = "SELECT * FROM `users` WHERE Email = '$username' && Password= '$pwd'";
+        $sql = "SELECT * FROM `admin` WHERE Email = '$username' && Password= '$pwd'";
         $data = mysqli_query($conn, $sql);
 
         $total = mysqli_num_rows($data);
