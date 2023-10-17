@@ -4,6 +4,8 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-image: url('bg3.jpg');
+    background-size: cover;
 }
 
 header {
@@ -41,6 +43,7 @@ nav a {
     text-align: center;
     color: #fff;
     padding: 100px 0;
+    color: #333;
 }
 
 .button {
@@ -74,3 +77,4 @@ nav a {
     font-size: 1.2rem;
     margin: 10px 0;
 }
+
