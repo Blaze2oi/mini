@@ -20,7 +20,7 @@ session_start();
       <input type="text" placeholder="Enter Email" id="Email" name="Email" required>
   
       <label for="Password"><b>Password</b></label>
-      <input type="password" placeholder="Enter Password" id="Password" name="Password" required>
+      <input type="Password" placeholder="Enter Password" id="Password" name="Password" required>
   
       <!-- <button type="button" onclick="submitForm()">Login</button> -->
       <div class="form-group">
@@ -58,11 +58,13 @@ session_start();
 <?php
 
 include("connect.php");
-ini_set('display_errors','Off');
+// ini_set('display_errors','Off');
         if(isset($_POST['login']))
         {
             $username = $_POST['Email'];
             $pwd = $_POST['Password'];
+            echo "$username";
+            echo "$pwd";
         }
 
         $sql = "SELECT * FROM `users` WHERE Email = '$username' && Password= '$pwd'";
@@ -73,7 +75,7 @@ ini_set('display_errors','Off');
         echo $total;
         if($total == 1)
         {
-          $_SESSION['Email'] = $username;
+          $_SESSION['user_name'] = $username;
           header('location:display.php');
           // echo "<br>";
           // echo $total;

@@ -1,13 +1,15 @@
 <?php
+// session_start();
 include("connect.php");
+// error_reporting(0);
+// $userprofile = $_SESSION['user_name'];
+// if($userprofile == true)
 $query = "SELECT * FROM USERS";
 $data = mysqli_query($conn, $query);
-
 $total = mysqli_num_rows($data);
-
 if($total != 0)
 {
-    ?>
+ ?>
 
 <!DOCTYPE html>
 <html>

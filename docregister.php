@@ -3,7 +3,7 @@
 <html>
 
 <head>
-    <title>User Registration Form</title>
+    <title>Doctor Registration Form</title>
     <link rel="stylesheet" href="registration.css?v=<?php echo time(); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Young Serif:400,700&display=swap">
@@ -12,7 +12,7 @@
 
 <body>
         <div class="container">
-            <form action="registration.php" method="post">
+            <form action="docregister.php" method="post">
             <center>
                 <h1>Registration Form</h1>
             </center>
@@ -45,17 +45,26 @@
                 <label for="other">Other</label>
             </div>
            
+            <div class="form-group">
+                <label for="Location">Location:</label>
+                <input type="text" id="Location" name="Location" placeholder="Location" maxlength="32" required>
+            </div>
+
+            <div class="form-group">
+                <label for="Speciality">Speciality:</label>
+                <input type="text" id="Speciality" name="Speciality" placeholder="Speciality" maxlength="32" required>
+            </div>
             <!-- <div class="form-group">
                 <label for="medicalIssues">Medical Issues:</label>
                 <textarea id="medicalIssues" name="medicalIssues" cols="80" rows="2" placeholder="Medical Issues"
                     required></textarea>
             </div> -->
             
-            <div class="form-group">
+            <!-- <div class="form-group">
                 <label for="Address">Current Address:</label>
                 <textarea id="Address" name="Address" cols="80" rows="5" placeholder="Current Address"
                     required></textarea>
-            </div> 
+            </div>  -->
 
             <div class="form-group">
                 <label for="Email">Email:</label>
@@ -88,11 +97,13 @@
             $Name     = $_POST['Name'];
             $Number    = $_POST['Number'];
             $Gender   = $_POST['Gender'];
-            $Address  = $_POST['Address'];
+            $Location   = $_POST['Location'];
+            $Speciality   = $_POST['Speciality'];
+            // $Address  = $_POST['Address'];
             $Email    = $_POST['Email'];
             $Password = $_POST['Password'];
 
-            $sql = "INSERT INTO `users` (`Name`, `Number`, `Gender`, `Address`, `Email`, `Password`) VALUES (' $Name', ' $Number', '$Gender ', ' $Address', ' $Email', ' $Password')";
+            $sql = "INSERT INTO `doctors` (`Name`, `Number`, `Gender`, `Location`, `Speciality`, `Email`, `Password`) VALUES (' $Name', ' $Number', '$Gender ', ' $Location', ' $Speciality',' $Email', ' $Password')";
             $data = mysqli_query($conn, $sql);
 
             if($data)
