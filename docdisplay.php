@@ -14,11 +14,11 @@ if($total != 0)
 <!DOCTYPE html>
 <html>
 <head>
-    <title>User Registration Details</title>
+    <title>Doctor Registration Details</title>
     <link rel="stylesheet" href="user_display.css?v=<?php echo time(); ?>">
 </head>
 <body>
-    <h1>User Registration Details</h1>
+    <h1>Doctor Registration Details</h1>
 	
     <table border="1">
         <tr>

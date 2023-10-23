@@ -11,7 +11,7 @@ session_start();
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-  <form action="login1.php" method="post">
+  <form action="adminlogin.php" method="post">
 
   
     <div class="container">
@@ -76,7 +76,7 @@ include("connect.php");
         if($total == 1)
         {
           $_SESSION['user_name'] = $username;
-          header('location:display.php');
+          header('location:info.php');
           // echo "<br>";
           // echo $total;
         }

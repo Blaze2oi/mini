@@ -76,7 +76,7 @@ include("connect.php");
         if($total == 1)
         {
           $_SESSION['user_name'] = $username;
-          header('location:display.php');
+          header('location:search.php');
           // echo "<br>";
           // echo $total;
         }

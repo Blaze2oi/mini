@@ -31,8 +31,7 @@
             <div class="form-group">
               <label for="Number">Phone:</label>
               <div class="phone-input">
-
-                  <input type="tel" id="Number" name="Number" placeholder="Phone no." maxlength="10" required>
+              <input type="tel" id="Number" name="Number" placeholder="Phone no." maxlength="10" required>
               </div>
           </div>
             <div class="form-group">
