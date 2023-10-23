@@ -5,7 +5,7 @@ include("connect.php");
 // $userprofile = $_SESSION['user_name'];
 // if($userprofile == true)
 $Email = $_GET['Email'];
-$query = "SELECT FROM DOCTORS WHERE Email = '$Email' ";
+$query = "SELECT * FROM DOCTORS WHERE Email = '$Email'";
 $data = mysqli_query($conn, $query);
 $total = mysqli_num_rows($data);
 if($total != 0)
@@ -15,11 +15,11 @@ if($total != 0)
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Doctor Registration Details</title>
+    <title>Appointment request Details</title>
     <link rel="stylesheet" href="user_display.css?v=<?php echo time(); ?>">
 </head>
 <body>
-    <h1>Doctor Registration Details</h1>
+    <h1>Appointment request Details</h1>
 	
     <table border="1">
         <tr>
