@@ -1,7 +1,7 @@
 <?php
 // session_start();
 include("connect.php");
-// error_reporting(0);//
+// error_reporting(0);///
 // $userprofile = $_SESSION['user_name'];
 // if($userprofile == true)
 $Email = $_GET['Email'];
