@@ -9,10 +9,12 @@ session_start();
     <link rel="stylesheet" href="search.css?v=<?php echo time(); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Young Serif:400,700&display=swap">
+    <link rel="stylesheet" href="search.css?v=<?php echo time(); ?>">
 
 </head>
 
 <body>
+
         <div class="container">
             <form method="post">
             <center>

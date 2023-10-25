@@ -1,116 +1,140 @@
-/* Bordered form */
-body{
-    background-image: url("bg2.jpg");
+  /* Bordered form */
+  body {
+    background-image: url("https://images.unsplash.com/photo-1507608158173-1dcec673a2e5?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjF8fHdvb2RlbiUyMGdyZWlzaCUyMGRhcmslMjBiYWNrZ3JvdW5kfGVufDB8fDB8fHww");
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: 100% 100%; 
-    }
-    form {
+    background-size: 100% 100%;
+    color: #000; /* Change text color to black */
+  }
   
-      width: 100%;
-      display: inline-flexbox;
-      justify-content: center;
-      line-height: 2rem;
-    }
-    
-    /* Full-width inputs */
-    input[type=text], input[type=password] {
-      width: 100%;
-      padding: 12px 20px;
-      margin: 8px 0;
-      display: inline-block;
-      border: 1px solid #ccc;
-      box-sizing: border-box;
-      border-radius: 15px;
-    }
-    
-    /* Set a style for all buttons */
-    button {
-      background-color: #06127e;
-      color: white;
-      padding: 10px 15px;
-      margin: 8px 0;
-      border: none;
-      cursor: pointer;
-      width: 100%;    
-      border-radius: 15px;
-      font-size: 20px;
-    }
-    
-    /* Add a hover effect for buttons */
-    button:hover {
-      opacity: 0.8;
-    }
-    
-    /* Extra style for the cancel button (red) */
-    .cancelbtn {
-      width: auto;
-      padding: 10px 18px;
-      background-color: #f44336;
-    }
-    .resbtn {
-      width: 10%;
-      padding: 5px 8px;
-      background-color: green;
-    }
-    
-    /* Center the avatar image inside this container */
-    .imgcontainer {
-       text-align: center;
-      margin: 24px 0 12px 0;
-    }
-    
-    /* Avatar image */
-    img.avatar {
-       width: 20%;
-      border-radius: 20%;
-    }
-    
-    /* Add padding to containers */
-    /* .container {
-      padding: 50px;
-      width: 70%;
-      padding-left: 200px;
-    }
-     */
-    .container {
-        padding: 50px;
-        /* background-color: #ffffff; */
-        background-image: url(images/bg.jpeg);
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-size: 100% 100%;
-        width: 70%;
-        margin: 0 auto;
-    }
-    .vessel{
-      background-color:#f1f1f1;
-      padding-left: 50px;
-    }
-    .containerr {
-    background-image: url("bg2.jpg");
+  form {
+    display: flex; /* Use flex display for centering */
+    flex-direction: column; /* Stack form elements vertically */
+    align-items: center; /* Center items horizontally */
+    margin: 0 auto;
+    max-width: 1000px;
+    padding: 20px;
+  }
+  
+  /* Full-width inputs */
+  input[type=text],
+  input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 15px;
+  }
+  
+  /* Set a style for all buttons */
+  button {
+    background-color: #06127e;
+    color: white;
+    padding: 10px 15px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 15px;
+    font-size: 20px;
+  }
+  
+  /* Add a hover effect for buttons */
+  button:hover {
+    opacity: 0.8;
+  }
+  
+  /* Extra style for the cancel button (red) */
+  .cancelbtn {
+    background-color: #f44336;
+  }
+  
+  .resbtn {
+    width: 10%;
+    padding: 5px 8px;
+    background-color: green;
+  }
+  
+  /* Center the avatar image inside this container */
+  .imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+  }
+  
+  /* Avatar image */
+  img.avatar {
+    width: 20%;
+    border-radius: 20%;
+  }
+  
+  /* Add padding to containers */
+  .container {
+    background-image: url(images/bg.jpeg);
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: 100% 100%; 
-    /* margin: 0 20px; */
+    background-size: 100% 100%;
+    width: 70%;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    color: #000; /* Change text color to black */
+  }
+  
+  .vessel {
+    background-color: #f1f1f1;
+    padding-left: 50px;
+  }
+  
+  .containerr {
+    background-image: url("https://images.unsplash.com/photo-1507608158173-1dcec673a2e5?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjF8fHdvb2RlbiUyMGdyZWlzaCUyMGRhcmslMjBiYWNrZ3JvdW5kfGVufDB8fDB8fHww");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
     text-align: center;
     line-height: 20px;
-    }
-    p{
-    color: #ccc;
+    color: #000; /* Change text color to black */
+  }
+  
+  p {
     font-size: 30px;
-    }
-    label{
-      color: #ccc;
-      line-height: 10px;
-      font-size: 20px;
-    }
-    h1{
-      color: azure;
-      font-size: 40px;
-    }
-    .regi{
-        font-size: 30px;
-        margin-bottom: 20px;
-        text-decoration: none;
-    }
+  }
+  
+  label {
+    font-size: 20px;
+  }
+  
+  h1 {
+    font-size: 40px;
+  }
+  
+  .regi {
+    font-size: 30px;
+    margin-bottom: 20px;
+    text-decoration: none;
+  }
+  
+  /* Align and style "Registration for Users" and "Registration for Doctors" */
+  .regi a {
+    font-size: 30px;
+    margin-bottom: 20px;
+    text-decoration: none;
+    display: block; /* Display these links as blocks */
+    margin-top: 20px; /* Add space between the links */
+  }
+  
+  .regi a.user {
+    color: #121214; /* Blue color for Users */
+  }
+  
+  .regi a.doctor {
+    color: #080709; /* Red color for Doctors */
+  }
+  
+  
+  .new-here {
+    font-size: 30px; /* Increase the font size */
+    font-weight: bold; /* Make it bold */
+    color: #100e2e; /* Change text color */
+    text-decoration: style; /* Underline the text */
+  }

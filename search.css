@@ -1,3 +1,103 @@
-body{
-    background-color: aqua;
+/* Add this CSS rule to set the background image */
+body {
+    background-image: url('https://images.unsplash.com/photo-1528460033278-a6ba57020470?auto=format&fit=crop&q=80&w=1935&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3Ds'); /* Replace 'background.jpg' with your image file's path */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* Your existing CSS styles can go here */
+.container {
+    /* Your container styles */
+}
+
+/* Other styles... */
+
+/* search.css */
+
+/* Body styling */
+body {
+    font-family: 'Young Serif', serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.2); /* Adjust the alpha (0.8) for transparency */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Form styling */
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.form-group {
+    margin: 10px 0;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    color: #333;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button.registerbtn {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+    margin-top: 20px;
+}
+
+th {
+    background-color: #333;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px;
+}
+
+td {
+    padding: 10px;
+}
+
+/* Link styling */
+a.btn {
+    display: block;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+a.btn:hover {
+    background-color: #555;
 }

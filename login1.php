@@ -9,6 +9,8 @@ session_start();
   <title>Login Page</title>
   <link rel="stylesheet" href="login1.css?v=<?php echo time();?>">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  
 </head>
 <body>
   <form action="login1.php" method="post">
@@ -32,12 +34,21 @@ session_start();
     <!-- </div>
     <div class="container"> -->
       <!-- <button type="button" class="cancelbtn">Cancel</button> -->
-      <div class="containerr"><b><p>New Here</p></b>
+      <div class="container">
+  
+    <p class="new-here">New Here..?</p> <!-- Apply the class here -->
+</div>
+
       <!-- <a href="registration.html" style="text-decoration: none;"><button type="button" class="regbtn">Register</button></a>  -->
-      <div class="regi" ><a href="http://localhost/mini/registration.php" style="text-decoration: none; color:blue;"><b>registeration for Users</b></a><br></div>
-      <div class="regi" ><a href="http://localhost/mini/docregister.php" style="text-decoration: none; color:blue;"><b>registeration for doctors</b></a><br></div>
-      <!-- <span class="psw">Forgot <a href="#">password?</a></span></div> -->
-    </div>
+      <div class="container">
+        <div class="regi">
+          <a href="http://localhost/mini/registration.php" style="text-decoration: none;" class="user"><b>Registration for Users</b></a>
+        </div>
+        <div class="regi">
+          <a href="http://localhost/mini/docregister.php" style="text-decoration: none;" class="doctor"><b>Registration for Doctors</b></a>
+        </div>
+      </div>
+      
 
   </form>
   <!-- <script>

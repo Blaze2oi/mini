@@ -1,11 +1,12 @@
-/* styles.css */
+ /* Additional CSS styles for improving aesthetics */
 
-body {
+ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-image: url('bg3.jpg');
     background-size: cover;
+    background-attachment: fixed; /* Fixed background image */
 }
 
 header {
@@ -29,30 +30,114 @@ nav a {
     text-decoration: none;
     color: #fff;
     font-weight: bold;
+    transition: color 0.3s; /* Smooth color transition on hover */
 }
 
-.main {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
+nav a:hover {
+    color: #007BFF; /* Change color on hover */
 }
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s; /* Smooth color transition on hover */
+}
+
+nav a:hover {
+    color: #007BFF; /* Change color on hover */
+}
+
+/* Updated CSS for the emergency dropdown */
+
+.emergency-numbers {
+    position: relative;
+}
+
+.emergency-dropdown {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    border-radius: 4px;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+}
+
+.emergency-numbers:hover .emergency-dropdown {
+    display: block;
+}
+
+.emergency-dropdown li {
+    margin: 0;
+    padding: 0;
+}
+
+.emergency-dropdown a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    padding: 10px 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.emergency-dropdown a:hover {
+    background-color: #007BFF;
+    color: #fff;
+}
+
+
 
 .hero {
-    background-image: url('background.jpg');
-    background-size: cover;
-    text-align: center;
-    color: #fff;
-    padding: 100px 0;
-    color: #333;
+  background-image: url('background.jpg');
+  background-size: cover;
+  text-align: center;
+  color: #0b0505;
+  padding: 100px 0;
 }
 
-.button {
+.hero h1 {
+    font-size: 3rem; /* Increase the font size */
+    font-weight: bold; /* Make it bold */
+    text-transform: uppercase; /* Uppercase text */
+    letter-spacing: 8px; /* Add letter spacing */
+    text-shadow: 2px 2px 4px rgba(66, 65, 65, 0.98); /* Add a shadow effect */
+}
+
+   /* Updated button styles for "Login for Users" and "Login for Doctors" */
+   .button {
     display: inline-block;
     padding: 10px 20px;
     background-color: #007BFF;
     color: #fff;
     text-decoration: none;
     border-radius: 4px;
+    transition: background-color 0.3s; /* Smooth background color transition on hover */
+    cursor: pointer; /* Add pointer cursor */
+}
+
+.button:hover {
+    background-color: #0056b3; /* Darker color on hover */
+}
+
+/* Add cool features when buttons are clicked */
+.button:active {
+    transform: scale(0.95); /* Slight scaling down on click */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a shadow effect on click */
 }
 
 .about, .services {
@@ -62,10 +147,12 @@ nav a {
 
 .about h2, .services h2 {
     font-size: 2rem;
+    color: #333; /* Darker text color */
 }
 
 .about p {
     font-size: 1.2rem;
+    color: #777; /* Slightly lighter text color */
 }
 
 .services ul {
@@ -76,18 +163,21 @@ nav a {
 .services li {
     font-size: 1.2rem;
     margin: 10px 0;
-}
-.text-center{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    padding: 40px;
-
+    color: #333; /* Darker text color */
 }
 
+/* Additional style for the "login for Users" and "login for doctors" links */
+.regi a {
+    text-decoration: none;
+    background-color: #74086f;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 4px;
+    margin: 10px;
+    display: inline-block;
+    transition: background-color 0.3s; /* Smooth background color transition on hover */
+}
 
-
-
-
-
+.regi a:hover {
+    background-color: #0056b3; /* Darker color on hover */
+}

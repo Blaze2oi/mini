@@ -7,16 +7,19 @@
     <title>Input Form</title>
 </head>
 <body>
-        <form method="POST" action="booking.php">
+    <form method="POST" action="booking.php">
+
+        <h2>Book an Appointment</h2>
 
         <label for="email">Doctor Email:</label>
-        <input type="email" name="email"><br><br>
+        <input type="email" name="email"><br>
 
         <label for="name">Your Name:</label>
-        <input type="text" id="name" name="name" required><br><br>
+        <input type="text" id="name" name="name" required><br>
 
         <label for="number">Your Number:</label>
-        <input type="text" id="number" name="number" required><br><br>
+        <input type="text" id="number" name="number" required><br>
+
         <input type="submit" value="Submit">
     </form>
 </body>
