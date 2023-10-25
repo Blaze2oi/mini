@@ -76,7 +76,7 @@ include("connect.php");
         if($total == 1)
         {
           $_SESSION['user_name'] = $username;
-          header('location:appointments.php?Email=$username');
+          header("Location: appointments.php?Email=$username");
           // echo "<br>";
           // echo $total;
         }
