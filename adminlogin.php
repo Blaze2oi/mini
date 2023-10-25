@@ -65,7 +65,7 @@ include("connect.php");
             $pwd = $_POST['Password'];
             // echo "$username";
             // echo "$pwd";
-        }
+        
 
         $sql = "SELECT * FROM `admin` WHERE Email = '$username' && Password= '$pwd'";
         $data = mysqli_query($conn, $sql);
@@ -83,5 +83,5 @@ include("connect.php");
         else
         {
           echo "Login Failed";
-        }
+        }}
 ?>

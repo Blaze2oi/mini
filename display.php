@@ -15,7 +15,7 @@ if($total != 0)
 <html>
 <head>
     <title>User Registration Details</title>
-    <link rel="stylesheet" href="user_display.css?v=<?php echo time(); ?>">
+    <link rel="stylesheet" href="search.css?v=<?php echo time(); ?>">
 </head>
 <body>
     <h1>User Registration Details</h1>
