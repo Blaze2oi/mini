@@ -22,8 +22,8 @@ if($total != 0)
 	
     <table border="1">
         <tr>
-            <th>Name</th>
-            <th>Phone Number</th>
+        <th>Name</th>
+        <th>Phone Number</th>
 	    <th>Gender</th>
 	    <th>Location</th>
         <th>Speciality</th>
