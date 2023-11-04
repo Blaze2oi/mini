@@ -17,6 +17,11 @@ if($total != 0)
 <head>
     <title>Appointment request Details</title>
     <link rel="stylesheet" href="search.css?v=<?php echo time(); ?>">
+    <nav>       <ul>
+                <li><a href="http://localhost/mini/web.php">Home</a></li>
+            </ul>
+
+        </nav>
 </head>
 <body>
     <h1>Appointment request Details</h1>

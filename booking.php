@@ -1,9 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    
+
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="booking.css">
+    <nav>       <ul>
+                <li><a href="http://localhost/mini/web.php">Home</a></li>
+            </ul>
+
+        </nav>
     <title>Input Form</title>
 </head>
 <body>
