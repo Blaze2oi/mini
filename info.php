@@ -18,5 +18,11 @@
         <p>Check all registered Users</p>
         <a class="btn" href="http://localhost/mini/display.php">Review</a>
     </div>
+
+    <div class="card">
+        <h2>Appointments</h2>
+        <p>Check Appointment Details</p>
+        <a class="btn" href="http://localhost/mini/apointdetail.php">Review</a>
+    </div>
 </body>
 </html>

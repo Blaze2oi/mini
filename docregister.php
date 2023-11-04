@@ -18,7 +18,7 @@
             </center>
             <div class="form-group">
                 <label for="Name">Name:</label>
-                <input type="text" id="Name" name="Name" placeholder="Firstname" maxlength="32" required>
+                <input type="text" id="Name" name="Name" placeholder="Name" maxlength="32" required>
             </div>
             <!-- <div class="form-group">
                 <label for="lastname">Lastname:</label>
@@ -29,9 +29,9 @@
                 <input type="date" id="birthdate" name="birthdate" required>
             </div> -->
             <div class="form-group">
-              <label for="Number">Phone:</label>
+              <label for="Number">Phone no:</label>
               <div class="phone-input">
-              <input type="tel" id="Number" name="Number" placeholder="Phone no." maxlength="10" required>
+              <input type="tel" id="Number" name="Number" placeholder="+91" maxlength="10" required>
               </div>
           </div>
             <div class="form-group">
@@ -43,27 +43,36 @@
                 <input type="radio" id="other" value="Other" name="Gender" required>
                 <label for="other">Other</label>
             </div>
+
+            <div class="form-group">
+                <label for="hospitalname">Clinic/Hospital's Name:</label>
+                <input type="text" id="hospitalname" name="hospitalname" placeholder="hospitalname" maxlength="50" required>
+            </div>
+
+            <div class="form-group">
+                <label for="location1">Address:</label>
+                <textarea id="location1" name="location1" cols="80" rows="5" placeholder="Address of your clinic/hospital" required></textarea>
+            </div> 
            
             <div class="form-group">
-                <label for="Location">Location:</label>
-                <input type="text" id="Location" name="Location" placeholder="Location" maxlength="32" required>
+                <label for="Locationmain">City:</label>
+                <input type="text" id="Locationmain" name="Locationmain" placeholder="city" maxlength="32" required>
+            </div>
+
+            <div class="form-group">
+                <label for="yearsofexp">Years of Experience:</label>
+                <input type="text" id="yearsofexp" name="yearsofexp" cols="80" rows="2" placeholder="YOE in your field" required>
             </div>
 
             <div class="form-group">
                 <label for="Speciality">Speciality:</label>
                 <input type="text" id="Speciality" name="Speciality" placeholder="Speciality" maxlength="32" required>
             </div>
-            <!-- <div class="form-group">
-                <label for="medicalIssues">Medical Issues:</label>
-                <textarea id="medicalIssues" name="medicalIssues" cols="80" rows="2" placeholder="Medical Issues"
-                    required></textarea>
-            </div> -->
-            
-            <!-- <div class="form-group">
-                <label for="Address">Current Address:</label>
-                <textarea id="Address" name="Address" cols="80" rows="5" placeholder="Current Address"
-                    required></textarea>
-            </div>  -->
+
+            <div class="form-group">
+                <label for="timeslot">Avaliable time slots</label>
+                <input type="text" id="timeslot" name="timeslot" cols="20" rows="6" placeholder="time slots" required>
+            </div>
 
             <div class="form-group">
                 <label for="Email">Email:</label>
@@ -100,13 +109,17 @@
             $Name     = $_POST['Name'];
             $Number    = $_POST['Number'];
             $Gender   = $_POST['Gender'];
-            $Location   = $_POST['Location'];
+            $hospitalname   = $_POST['hospitalname'];
+            $location1   = $_POST['location1'];
+            $Locationmain   = $_POST['Locationmain'];
+            $yearsofexp   = $_POST['yearsofexp'];
             $Speciality   = $_POST['Speciality'];
             // $Address  = $_POST['Address'];
             $Email    = $_POST['Email'];
             $Password = $_POST['Password'];
+            $timeslot = $_POST['timeslot'];
 
-            $sql = "INSERT INTO `doctors` (`Name`, `Number`, `Gender`, `Location`, `Speciality`, `Email`, `Password`) VALUES (' $Name', ' $Number', '$Gender ', ' $Location', ' $Speciality',' $Email', ' $Password')";
+            $sql = "INSERT INTO `doctors` (`Name`, `Number`, `Gender`, `hospitalname`, `location1`, `Locationmain`, `yearsofexp`, `Speciality`, `Email`, `Password`, `timeslot`) VALUES ('$Name', '$Number', '$Gender ', '$hospitalname', '$location1', '$Locationmain', '$yearsofexp', '$Speciality','$Email', '$Password', '$timeslot')";
             $data = mysqli_query($conn, $sql);
 
             if($data)

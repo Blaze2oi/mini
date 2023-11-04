@@ -18,7 +18,7 @@
             </center>
             <div class="form-group">
                 <label for="Name">Name:</label>
-                <input type="text" id="Name" name="Name" placeholder="Firstname" maxlength="32" required>
+                <input type="text" id="Name" name="Name" placeholder="Name" maxlength="32" required>
             </div>
             <!-- <div class="form-group">
                 <label for="lastname">Lastname:</label>
@@ -32,7 +32,7 @@
               <label for="Number">Phone:</label>
               <div class="phone-input">
 
-                  <input type="tel" id="Number" name="Number" placeholder="Phone no." maxlength="10" required>
+                  <input type="tel" id="Number" name="Number" placeholder="+91" maxlength="10" required>
               </div>
           </div>
             <div class="form-group">
@@ -52,8 +52,8 @@
             </div> -->
             
             <div class="form-group">
-                <label for="Address">Current Address:</label>
-                <textarea id="Address" name="Address" cols="80" rows="5" placeholder="Current Address"
+                <label for="Address">Address:</label>
+                <textarea id="Address" name="Address" cols="80" rows="5" placeholder="Address"
                     required></textarea>
             </div> 
 
@@ -98,7 +98,7 @@
             $Email    = $_POST['Email'];
             $Password = $_POST['Password'];
 
-            $sql = "INSERT INTO `users` (`Name`, `Number`, `Gender`, `Address`, `Email`, `Password`) VALUES (' $Name', ' $Number', '$Gender ', ' $Address', ' $Email', ' $Password')";
+            $sql = "INSERT INTO `users` (`Name`, `Number`, `Gender`, `Address`, `Email`, `Password`) VALUES ('$Name', '$Number', '$Gender ', '$Address', '$Email', '$Password')";
             $data = mysqli_query($conn, $sql);
 
             if($data)

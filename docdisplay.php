@@ -24,22 +24,30 @@ if($total != 0)
         <tr>
         <th>Name</th>
         <th>Phone Number</th>
-	    <th>Gender</th>
-	    <th>Location</th>
+        <th>Gender</th>
+        <th>hospitalname</th>
+        <th>Address of clinic/hospital</th>
+	    <th>City</th>
+        <th>Years of Experience</th>
         <th>Speciality</th>
 	    <th>Email</th>
+        <th>Avaliable time slot</th>
         </tr>
 
     <?php
     while($result = mysqli_fetch_assoc($data))
     {
         echo "<tr>
-              <td>$result[Name].</td>
-              <td>$result[Number].</td>
-	          <td>$result[Gender].</td>
-	          <td>$result[Location].</td>
-              <td>$result[Speciality].</td>
-	          <td>$result[Email].</td>
+              <td>$result[Name]<x/td>
+              <td>$result[Number]</td>
+	          <td>$result[Gender]</td>
+              <td>$result[hospitalname]</td>
+              <td>$result[location1]</td>
+	          <td>$result[Locationmain]</td>
+              <td>$result[yearsofexp]</td>
+              <td>$result[Speciality]</td>
+	          <td>$result[Email]</td>
+              <td>$result[timeslot]</td>
               </tr>";
         // echo $result["Name"]." ".$result["Number"]." ".$result["Gender"]." ".$result["Address"]." ".$result["Email"]."<br>";
     }

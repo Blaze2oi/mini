@@ -83,5 +83,6 @@ include("connect.php");
         else
         {
           echo "Login Failed";
-        }}
+        }
+      }
 ?>

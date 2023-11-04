@@ -33,11 +33,11 @@ if($total != 0)
     while($result = mysqli_fetch_assoc($data))
     {
         echo "<tr>
-              <td>$result[Name].</td>
-              <td>$result[Number].</td>
-	          <td>$result[Gender].</td>
-	          <td>$result[Address].</td>
-	          <td>$result[Email].</td>
+              <td>$result[Name]</td>
+              <td>+91 $result[Number]</td>
+	          <td>$result[Gender]</td>
+	          <td>$result[Address]</td>
+	          <td>$result[Email]</td>
               </tr>";
         // echo $result["Name"]." ".$result["Number"]." ".$result["Gender"]." ".$result["Address"]." ".$result["Email"]."<br>";
     }

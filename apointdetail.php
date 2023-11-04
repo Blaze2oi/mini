@@ -1,11 +1,10 @@
 <?php
 // session_start();
 include("connect.php");
-$Email = $_GET['Email'];
 // error_reporting(0);
 // $userprofile = $_SESSION['user_name'];
 // if($userprofile == true)
-$query = "SELECT * FROM `appointments` WHERE doctor = '$Email'";
+$query = "SELECT * FROM `appointments`";
 $data = mysqli_query($conn, $query);
 $total = mysqli_num_rows($data);
 if($total != 0)
@@ -15,29 +14,30 @@ if($total != 0)
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Appointment request Details</title>
+    <title>Appointment Details</title>
     <link rel="stylesheet" href="search.css?v=<?php echo time(); ?>">
 </head>
 <body>
-    <h1>Appointment request Details</h1>
+    <h1>Appointment Details</h1>
 	
     <table border="1">
         <tr>
-        <th>Patient name</th>
-        <th>Patient number</th>
-        <th>Patient Email</th>
-	    <th>Time slot</th>
+        <th>Doctor Email</th>
+        <th>Patient Name</th>
+        <th>Time Slot</th>
+        <th>Confirmation</th>
         </tr>
 
     <?php
     while($result = mysqli_fetch_assoc($data))
     {
         echo "<tr>
-              <td>$result[user].</td>
-              <td>$result[number].</td>
-              <td>$result[uemail].</td>
-              <td>$result[timeslot].</td>
+              <td>$result[doctor]</td>
+              <td>$result[user]</td>
+	          <td>$result[timeslot]</td>
+              <td>$result[confirmation]</td>
               </tr>";
+        // echo $result["Name"]." ".$result["Number"]." ".$result["Gender"]." ".$result["Address"]." ".$result["Email"]."<br>";
     }
 }
 else

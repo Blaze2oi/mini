@@ -1,5 +1,6 @@
 <?php
 session_start();
+$Email = $_GET['Email'];
 ?>
 <!DOCTYPE html>
 <html>
@@ -50,7 +51,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
             echo "Searched for location - $Location. <br>";
             echo "Searched for Speciality - $Speciality. <br>";
 
-        $query = "SELECT * FROM `doctors` WHERE `Location` = '$Location' && `Speciality` = '$Speciality';" ;
+        $query = "SELECT * FROM `doctors` WHERE `Locationmain` = '$Location' && `Speciality` = '$Speciality';" ;
 $data = mysqli_query($conn, $query);
 $total = mysqli_num_rows($data);
 if($total != 0)
@@ -60,26 +61,34 @@ if($total != 0)
  <h1>No of Doctors found <?php echo $total ?></h1>
 	
     <table border="1">
-        <tr>
-            <th>Name</th>
-            <th>Phone Number</th>
-	    <th>Gender</th>
-	    <th>Location</th>
+    <tr>
+        <th>Name</th>
+        <th>Phone Number</th>
+        <th>Gender</th>
+        <th>hospitalname</th>
+        <th>Address of clinic/hospital</th>
+	    <th>City</th>
+        <th>Years of Experience</th>
         <th>Speciality</th>
 	    <th>Email</th>
+        <th>Avaliable time slots</th>
         </tr>
  
  <?php
  while($result = mysqli_fetch_assoc($data))
  {
      echo "<tr>
-           <td>$result[Name]</td>
-           <td>$result[Number]</td>
-           <td>$result[Gender]</td>
-           <td>$result[Location]</td>
-           <td>$result[Speciality]</td>
-           <td>$result[Email]</td> 
-           </tr>";
+     <td>$result[Name]</td>
+     <td>$result[Number]</td>
+     <td>$result[Gender]</td>
+     <td>$result[hospitalname]</td>
+     <td>$result[location1]</td>
+     <td>$result[Locationmain]</td>
+     <td>$result[yearsofexp]</td>
+     <td>$result[Speciality]</td>
+     <td>$result[Email]</td>
+     <td>$result[timeslot]</td>
+     </tr>";
 
            
            

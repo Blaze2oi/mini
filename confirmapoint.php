@@ -9,22 +9,13 @@
 <body>
     <form method="POST" action="booking.php">
 
-        <h2>Book an Appointment</h2>
-
-        <label for="email">Doctor Email:</label>
-        <input type="email" name="email"><br>
+        <h2>Confirm Appointment</h2>
 
         <label for="name">Your Name:</label>
         <input type="text" id="name" name="name" required><br>
 
-        <label for="number">Your Number:</label>
+        <label for="number">Time slot:</label>
         <input type="text" id="number" name="number" required><br>
-
-        <label for="uemail">Your Email:</label>
-        <input type="text" id="uemail" name="uemail" required><br>
-
-        <label for="time">Time slot:</label>
-        <input type="text" id="time" name="time" required><br>
 
         <input type="submit" value="Submit">
     </form>
@@ -35,14 +26,13 @@
 <?php
         
         include("connect.php");
+        $Email = $_GET['Email'];
         if ($_SERVER['REQUEST_METHOD'] == "POST") {
             $doctor = $_POST['email'];
             $user = $_POST['name'];
-            $number = $_POST['number'];
-            $uemail = $_POST['uemail'];
-            $timeslot = $_POST['time'];
+            $timeslot = $_POST['number'];
         
-            $sql = "INSERT INTO `appointments` (`doctor`, `user`, `timeslot`, `number`, `uemail`) VALUES ('$doctor', '$user', '$timeslot', '$number', '$uemail')";            
+            $sql = "INSERT INTO `appointments` (`doctor`, `user`, `timeslot`) VALUES ('$doctor', '$user', '$timeslot')";            
             $data = mysqli_query($conn, $sql);
         
             if ($data) {
